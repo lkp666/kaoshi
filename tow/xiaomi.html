@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/home1.css">
+</head>
+<body>
+    <div id="main_warpper">
+        <div class="main content">
+            <div class="main_top">
+                <ul>
+                    <li class="li_1">
+                        <img src="../img/xmad_15232433421155_vCzhJ.jpg"/>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="../img/pms_1545286017.38639954!220x220.jpg"/>
+                            </dt>
+                            <dd><b>米加互联网空调</b><br/><p>1.5皮边频/搞笑制冷/远程控制</p><br/><i>2999元</i></dd>
+                        </dl>
+                        <div class="position">我来了</div>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="../img/pms_1545286017.38639954!220x220.jpg"/>
+                            </dt>
+                            <dd><b>米加互联网空调</b><br/><p>1.5皮边频/搞笑制冷/远程控制</p><br/><i>2999元</i></dd>
+                        </dl>
+                        <div></div>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="../img/pms_1545286017.38639954!220x220.jpg"/>
+                            </dt>
+                            <dd><b>米加互联网空调</b><br/><p>1.5皮边频/搞笑制冷/远程控制</p><br/><i>2999元</i></dd>
+                        </dl>
+                        <div></div>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="../img/pms_1545286017.38639954!220x220.jpg"/>
+                            </dt>
+                            <dd><b>米加互联网空调</b><br/><p>1.5皮边频/搞笑制冷/远程控制</p><br/><i>2999元</i></dd>
+                        </dl>
+                        <div></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/jquery.js"></script>
+    <script>
+        
+        $("ul").delegate("li", "mouseenter", function(){  
+            var index=$(this).index();
+            //   console.log(index)
+            $(this).stop().slideUp();
+            $(this).stop().css('boxShadow' , '0px 16px 26px rgba(0,0,0,0.2)');
+            $(this).stop().animate({
+                height:300
+            },1000);
+            
+        });
+        $("ul").delegate("li", "mouseleave", function(){  
+            var index=$(this).index();
+            //   console.log(index)
+            // $(this).css("display","block");
+            // $(this).stop().hide();
+            $(this).stop().css('boxShadow' , 'none');
+            $(this).stop().animate({
+                height:300
+            },1000);
+            
+        });
+
+       
+    </script>
+</body>
+</html>
